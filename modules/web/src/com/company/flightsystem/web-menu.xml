@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <item screen="flightsystem_Listall" caption="Gelecek uçuşlar"/>
+    <item screen="flightsystem_Listpast" caption="Geçmiş uçuşlar"/>
+    <item screen="flightsystem_Createflight" caption="Uçuş Oluştur"/>
+    <item screen="flightsystem_Flightmanagment" caption="Uçuş Yönetimi"/>
+    <menu id="administration">
+        <item id="sec$User.browse"/>
+        <item id="sec$Group.browse"/>
+        <item id="sec$Role.browse"/>
+        <separator/>
+        <item id="sys$Category.browse"/>
+        <item id="sec$UserSessionEntity.browse"/>
+        <item id="sys$LockInfo.browse"/>
+        <item id="sys$FileDescriptor.browse"/>
+        <item id="sys$ScheduledTask.browse"/>
+        <item id="entityRestore"/>
+        <item id="entityInspector.browse"/>
+        <item id="appProperties"/>
+        <item id="jmxConsole"/>
+        <separator/>
+        <item id="entityLog"/>
+        <item id="sec$SessionLogEntry.browse"/>
+        <item id="sys$SendingMessage.browse"/>
+        <item id="serverLog"/>
+        <item id="screenProfiler"/>
+        <item id="performanceStatistics"/>
+        <item screen="flightsystem_Flightinfo" caption="mainMsg://menu_config.flightsystem_Flightinfo"/>
+    </menu>
+    <menu id="help">
+        <item id="aboutWindow" openType="DIALOG"/>
+        <item class="com.haulmont.cuba.web.app.domain.DomainProvider" id="printDomain"/>
+        <separator/>
+        <item id="settings"/>
+    </menu>
+</menu-config>

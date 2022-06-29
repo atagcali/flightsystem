@@ -1,0 +1,11 @@
+@import "hover-defaults";
+@import "com.company.flightsystem/hover-ext-defaults";
+@import "app-components";
+@import "com.company.flightsystem/hover-ext";
+
+.hover {
+  // include auto-generated app components SCSS
+  @include app_components;
+
+  @include com_company_flightsystem-hover-ext;
+}

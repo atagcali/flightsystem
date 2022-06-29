@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://listall.caption"
+        messagesPack="com.company.flightsystem.web.screens">
+    <data>
+        <collection id="collectionFlight" class="com.company.flightsystem.entity.Flight">
+            <loader id="loaderFlight">
+                <query>
+                    <![CDATA[select f from flightsystem_Flight f]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <layout>
+        <vbox id="box" align="MIDDLE_CENTER" spacing="true">
+
+        </vbox>
+    </layout>
+</window>

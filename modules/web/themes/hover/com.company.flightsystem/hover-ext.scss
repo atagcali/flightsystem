@@ -1,0 +1,67 @@
+/* Define your theme modifications inside next mixin */
+@mixin com_company_flightsystem-hover-ext {
+  .c-sidemenu.v-widget.v-has-width{
+    background-color: brown;
+  }
+  .v-csslayout.v-layout.v-widget.c-sidemenu-title.v-csslayout-c-sidemenu-title.v-has-width{
+    background-color: black;
+  }
+  .v-csslayout.v-layout.v-widget.c-sidemenu-controls.v-csslayout-c-sidemenu-controls.v-has-width{
+    background-color: black;
+  }
+  .v-button.v-widget.c-sidemenu-collapse-button.v-button-c-sidemenu-collapse-button{
+    background-color: black;
+    color: white;
+  }
+  .v-label.v-widget.c-user-select-label.v-label-c-user-select-label.v-label-undef-w{
+    color: white;
+  }
+  .v-button .v-widget .c-settings-button .v-button-c-settings-button .v-button-empty-caption .icon{
+    color: white;
+  }
+  .v-button.v-widget.c-logout-button.v-button-c-logout-button.icon.v-button-icon.v-button-empty-caption{
+    color: white;
+  }
+  .c-sidemenu-item.c-sidemenu-item-action{
+    color: white;
+  }
+  .c-sidemenu-item.c-sidemenu-item-header{
+    color: white;
+  }
+  .v-slot.v-align-center.v-align-middle{
+    background-color: brown;
+    color: white;
+  }
+  .c-sidemenu-item.c-sidemenu-item-action:hover{
+    color: gray;
+  }
+  .c-sidemenu-item.c-sidemenu-item-header:hover{
+    color: gray;
+  }
+  .v-verticallayout.v-layout.v-vertical.v-widget.c-initial-layout.v-verticallayout-c-initial-layout.v-has-width.v-has-height.v-margin-top.v-margin-right.v-margin-bottom.v-margin-left{
+    background-color: black;
+    padding-bottom: 40px;
+    padding-top: 40px ;
+  }
+
+  .c-app-window-wrap.v-layout.v-widget.c-app-tabbed-window.c-app-window-wrap-c-app-tabbed-window.v-has-width.v-has-height{
+    background-color: black;
+    padding-bottom: 40px;
+    padding-top: 11px ;
+    border: black;
+  }
+  .v-tabsheet-tabitem.v-tabsheet-tabitem-selected.v-tabsheet-tabitem-focus{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  //.v-verticallayout .v-layout .v-vertical .v-widget .c-initial-layout .v-verticallayout-c-initial-layout .v-has-width .v-has-height .v-margin-top .v-margin-right .v-margin-bottom .v-margin-left{
+  //  background-color: black;
+  //  backface-visibility: visible;
+  //}
+
+  .v-verticallayout.v-layout.v-vertical.v-widget.c-window-layout.v-verticallayout-c-window-layout.v-has-width.v-has-height{
+    background-color: brown;
+    backface-visibility: visible;
+  }
+}

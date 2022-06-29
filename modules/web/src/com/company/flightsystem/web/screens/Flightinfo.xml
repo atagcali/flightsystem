@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="Uçuş Bilgisi"
+        messagesPack="com.company.flightsystem.web.screens">
+    <layout width="100%">
+        <vbox spacing="true" align="MIDDLE_CENTER">
+            <hbox spacing="true" align="MIDDLE_CENTER">
+                <textField id="departureTF" caption="Kalkış Noktası" />
+                <textField id="destinationTF" caption="Varış Noktası"/>
+            </hbox>
+            <hbox spacing="true" align="MIDDLE_CENTER" >
+                <textField id="emptySeatTF" caption="Koltuk sayısı" />
+                <textField id="priceTF" caption="Ücret" />
+                <dateField id="dateDF" caption="date" />
+            </hbox>
+            <hbox align="MIDDLE_CENTER">
+                <button id="ChangeButton" caption="Güncelle"/>
+                <button id="delButton" caption="İptal et"/>
+            </hbox>
+        </vbox>
+    </layout>
+</window>

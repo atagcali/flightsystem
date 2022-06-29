@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://flightmanagment.caption"
+        messagesPack="com.company.flightsystem.web.screens">
+    <data>
+        <collection id="flightCol" class="com.company.flightsystem.entity.Flight" view="flightView">
+            <loader id="flightLoad">
+                <query>
+                    <![CDATA[select f from flightsystem_Flight f]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <layout>
+        <vbox>
+        <hbox align="MIDDLE_CENTER">
+            <button id="refreshBtn" caption="yenile"/>
+        </hbox>
+            <table id="flightsTable"  caption="Uçuşlar" dataContainer="flightCol" width="100%">
+                <columns>
+                    <column id="departure"/>
+                    <column id="destination"/>
+                    <column id="date"/>
+                </columns>
+                <rows/>
+            </table>
+        </vbox>
+    </layout>
+</window>

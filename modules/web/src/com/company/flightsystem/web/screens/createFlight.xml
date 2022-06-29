@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://createflight.caption"
+        messagesPack="com.company.flightsystem.web.screens">
+    <data>
+        <collection id="collectionFlight" class="com.company.flightsystem.entity.Flight"/>
+    </data>
+    <layout>
+        <vbox spacing="true" align="MIDDLE_CENTER">
+            <hbox spacing="true" align="MIDDLE_CENTER">
+                <textField id="departureTF" caption="Kalkış Noktası" />
+                <textField id="destinationTF" caption="Varış Noktası"/>
+            </hbox>
+            <hbox spacing="true" align="MIDDLE_CENTER" >
+                <textField id="emptySeatTF" caption="Koltuk sayısı" />
+                <textField id="priceTF" caption="Ücret" />
+                <dateField id="dateDF" caption="date" />
+            </hbox>
+            <button id="createBtn" caption="oluştur" align="MIDDLE_CENTER"/>
+        </vbox>
+    </layout>
+</window>

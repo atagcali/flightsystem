@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+    <view class="com.company.flightsystem.entity.Flight" entity="flightsystem_Flight" name="flightView">
+        <property name="date"/>
+        <property name="destination"/>
+        <property name="departure"/>
+        <property name="price"/>
+        <property name="emptySeat"/>
+    </view>
+</views>
